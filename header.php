@@ -13,7 +13,7 @@
     <title><?php wp_title(); ?></title>
 
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Richard Blyth">
+    <meta name="author" content="Anwar Choukah, Jamie Griffin">
 
     <!-- Google Analytics to go here -->
 

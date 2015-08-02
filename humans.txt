@@ -1,6 +1,7 @@
 # TEAM
 
-    Developer: Richard Blyth, www.richardblyth.com
+    Blank Theme Developer: Richard Blyth, www.richardblyth.com
+    Styling: Anwar Choukah, http://anwarchoukah.com
 
 # TECHNOLOGY COLOPHON
 
@@ -12,6 +13,6 @@
 
 # SITE
   
-  Last update: 2015/06/04
+  Last update: Sunday, 2 August, 2015
   Language: English
   Doctype: HTML5
