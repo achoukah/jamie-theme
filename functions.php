@@ -1,81 +1,30 @@
 <?php
 /**
- * _mbbasetheme functions and definitions
+ * Sage includes
  *
- * @package _mbbasetheme
+ * The $sage_includes array determines the code library included in your theme.
+ * Add or remove files to the array as needed. Supports child theme overrides.
+ *
+ * Please note that missing files will produce a fatal error.
+ *
+ * @link https://github.com/roots/sage/pull/1042
  */
+$sage_includes = [
+  'lib/utils.php',                 // Utility functions
+  'lib/init.php',                  // Initial theme setup and constants
+  'lib/wrapper.php',               // Theme wrapper class
+  'lib/conditional-tag-check.php', // ConditionalTagCheck class
+  'lib/config.php',                // Configuration
+  'lib/assets.php',                // Scripts and stylesheets
+  'lib/titles.php',                // Page titles
+  'lib/extras.php',                // Custom functions
+];
 
-/****************************************
-Theme Setup
-*****************************************/
+foreach ($sage_includes as $file) {
+  if (!$filepath = locate_template($file)) {
+    trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
+  }
 
-/**
- * Theme initialization
- */
-require get_template_directory() . '/lib/init.php';
-
-/**
- * Custom theme functions definited in /lib/init.php
- */
-require get_template_directory() . '/lib/theme-functions.php';
-
-/**
- * Helper functions for use in other areas of the theme
- */
-require get_template_directory() . '/lib/theme-helpers.php';
-
-/**
- * Implement the Custom Header feature.
- */
-//require get_template_directory() . '/lib/inc/custom-header.php';
-
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/lib/inc/template-tags.php';
-
-/**
- * Custom functions that act independently of the theme templates.
- */
-require get_template_directory() . '/lib/inc/extras.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/lib/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/lib/inc/jetpack.php';
-
-
-/****************************************
-Require Plugins
-*****************************************/
-
-require get_template_directory() . '/lib/class-tgm-plugin-activation.php';
-require get_template_directory() . '/lib/theme-require-plugins.php';
-
-// add_action( 'tgmpa_register', 'mb_register_required_plugins' );
-
-
-/****************************************
-Misc Theme Functions
-*****************************************/
-
-/**
- * Define custom post type capabilities for use with Members
- */
-add_action( 'admin_init', 'mb_add_post_type_caps' );
-function mb_add_post_type_caps() {
-	// mb_add_capabilities( 'portfolio' );
+  require_once $filepath;
 }
-
-/**
- * Filter Yoast SEO Metabox Priority
- */
-add_filter( 'wpseo_metabox_prio', 'mb_filter_yoast_seo_metabox' );
-function mb_filter_yoast_seo_metabox() {
-	return 'low';
-}
+unset($file, $filepath);

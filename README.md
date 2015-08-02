@@ -1,79 +1,120 @@
-# WordPress Starter Theme
+# [Sage](https://roots.io/sage/)
+[![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
+[![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
-Version: 4.2.2
+Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
 
-## Author:
+* Source: [https://github.com/roots/sage](https://github.com/roots/sage)
+* Homepage: [https://roots.io/sage/](https://roots.io/sage/)
+* Documentation: [https://roots.io/sage/docs/](https://roots.io/sage/docs/)
+* Twitter: [@rootswp](https://twitter.com/rootswp), [@retlehs](https://twitter.com/retlehs), [@swalkinshaw](https://twitter.com/swalkinshaw), [@Foxaii](https://twitter.com/Foxaii), [@c2foryou](https://twitter.com/c2foryou), [@austinpray](https://twitter.com/austinpray)
+* Newsletter: [Subscribe](http://roots.io/subscribe/)
+* Forum: [https://discourse.roots.io/](https://discourse.roots.io/)
 
-Matt Banks ( [@mattbanks](http://twitter.com/mattbanks) / [collectivthkg.com](http://collectivthkg.com) / [mattbanks.me](http://www.mattbanks.me) )
+## Requirements
 
-## Summary
+| Prerequisite    | How to check | How to install
+| --------------- | ------------ | ------------- |
+| PHP >= 5.4.x    | `php -v`     | [php.net](http://php.net/manual/en/install.php) |
+| Node.js 0.12.x  | `node -v`    | [nodejs.org](http://nodejs.org/) |
+| gulp >= 3.8.10  | `gulp -v`    | `npm install -g gulp` |
+| Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
 
-WordPress Starter Theme for use as a starting template for building custom themes. Uses SCSS and AutoPrefixr, HTML5 Boilerplate with Modernizr and Normalize.css, and Grunt for all processing tasks. Syncs changes across local development devices with BrowserSync. Tested up to WordPress 4.0 RC1.
+For more installation notes, refer to the [Install gulp and Bower](#install-gulp-and-bower) section in this document.
 
-## Usage
+## Features
 
-The theme is setup to use [Grunt](http://gruntjs.com/) to compile SCSS (with source maps), run it through [AutoPrefixr](https://github.com/ai/autoprefixer), lint, concatenate and minify JavaScript (with source maps), optimize images, and syncs changes across local development devices with [BrowserSync](https://github.com/shakyShane/browser-sync), with flexibility to add any additional tasks via the Gruntfile. Alternatively, you can use [CodeKit](http://incident57.com/codekit/) or whatever else you prefer to compile the SCSS and manage the JavaScript.
+* [gulp](http://gulpjs.com/) build script that compiles both Sass and Less, checks for JavaScript errors, optimizes images, and concatenates and minifies files
+* [BrowserSync](http://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
+* [Bower](http://bower.io/) for front-end package management
+* [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
+* [Sass](https://github.com/twbs/bootstrap-sass) [Bootstrap](http://getbootstrap.com/)
+* [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
+* ARIA roles and microformats
+* Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
+* [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/sage-translations)
 
-Rename folder to your theme name, change the `style.scss` intro block to your theme information. Open the theme directory in terminal and run `npm install` to pull in all Grunt dependencies. Run `grunt` to execute tasks. Code as you will.
+Install the [Soil](https://github.com/roots/soil) plugin to enable additional features:
 
-If you are using MAMP or Vagrant, change the `proxy` option in the `grunt browserSync` task to match your vhost URL.
+* Cleaner output of `wp_head` and enqueued assets
+* Cleaner HTML output of navigation menus
+* Root relative URLs
+* Nice search (`/search/query/`)
+* Google CDN jQuery snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
+* Google Analytics snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
 
-- Compile `assets/styles/style.scss` to `style.css`
-- Compile `assets/styles/editor-style.scss` to `editor-style.css`
-- Concatenate and minify plugins in `assets/js/vendor` and `assets/js/source/plugins.js` to `assets/js/plugins.min.js`
-- Minify and lint `assets/js/source/main.js` to `assets/js/main.min.js`
-- ??
-- Profit
-- Create sprites by adding PNGs to assets/images/sprites and use by referencing created classes in assets/styles/partials/_spritesheet.scss
+## Installation
 
-To concatenate and minify your jQuery plugins, add them to the `assets/js/vendor` directory and add the `js` filename and path to the `Gruntfile` `uglify` task. Previous versions of the starter theme automatically pulled all plugins in the `vendor` directory, but this has changed to allow more granular control and for managing plugins and assets with bower.
+Clone the git repo - `git clone https://github.com/roots/sage.git` and then rename the directory to the name of your theme or website.
 
-### Bower
+If you don't use [Bedrock](https://github.com/roots/bedrock), you'll need to add the following to your `wp-config.php` on your development installation:
 
-Supports [bower](https://github.com/bower/bower) to install and manage JavaScript dependencies in the `assets/js/vendor` folder.
+```php
+define('WP_ENV', 'development');
+```
 
-### Deployment
+## Configuration
 
-The theme includes deployments via [grunt-rsync](https://github.com/jedrichards/grunt-rsync). The Gruntfile includes setups for staging and production - edit your paths and host, then run `grunt deploy:staging` or `grunt deploy:production` to deploy your files via rsync.
+Edit `lib/config.php` to enable or disable theme features
 
-### Features
+Edit `lib/init.php` to setup navigation menus, post thumbnail sizes, post formats, and sidebars.
 
-1. Normalized stylesheet for cross-browser compatibility using Normalize.css version 3 (IE8+)
-2. Easy to customize
-3. Flexible grid based on work from [Chris Coyier](https://twitter.com/chriscoyier)
-4. Media Queries can be nested in each selector using SASS
-5. SCSS with plenty of mixins ready to go
-6. Grunt for processing all SASS, JavaScript and images, and cross-device refreshing with BrowserSync
-7. Much much more
+## Theme development
 
-### Suggested Plugins
+Sage uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
 
-* [WordPress SEO by Yoast](http://wordpress.org/extend/plugins/wordpress-seo/)
-* [Google Analytics for WordPress by Yoast](http://wordpress.org/extend/plugins/google-analytics-for-wordpress/)
-* [W3 Total Cache](http://wordpress.org/extend/plugins/w3-total-cache/)
-* [Gravity Forms](http://www.gravityforms.com/)
-* [Pods Framework](http://www.podsframework.org/)
+### Install gulp and Bower
 
-![dependencies](https://david-dm.org/mattbanks/WordPress-Starter-Theme.png)
+Building the theme requires [node.js](http://nodejs.org/download/). We recommend you update to the latest version of npm: `npm install -g npm@latest`.
 
-### Contributing:
+From the command line:
 
-Anyone and everyone is welcome to contribute! Check out the [Contributing Guidelines](CONTRIBUTING.md).
+1. Install [gulp](http://gulpjs.com) and [Bower](http://bower.io/) globally with `npm install -g gulp bower`
+2. Navigate to the theme directory, then run `npm install`
+3. Run `bower install`
 
-### Contributors:
+You now have all the necessary dependencies to run the build process.
 
-- [ddropik](https://github.com/ddropik)
-- [jjmu15](https://github.com/jjmu15)
+### Available gulp commands
 
-### Credits
+* `gulp` — Compile and optimize the files in your assets directory
+* `gulp watch` — Compile assets when file changes are made
+* `gulp --production` — Compile assets for production (no source maps).
 
-Without these projects, this WordPress Starter Theme wouldn't be where it is today.
+### Using BrowserSync
 
-* [HTML5 Boilerplate](http://html5boilerplate.com)
-* [Normalize.css](http://necolas.github.com/normalize.css)
-* [SASS / SCSS](http://sass-lang.com/)
-* [AutoPrefixr](https://github.com/ai/autoprefixer)
-* [BrowserSync](https://github.com/shakyShane/browser-sync)
-* [Don't Overthink It Grids](css-tricks.com/dont-overthink-it-grids/)
-* [Underscores Theme](https://github.com/Automattic/_s)
-* [Grunt](http://gruntjs.com/)
+To use BrowserSync during `gulp watch` you need to update `devUrl` at the bottom of `assets/manifest.json` to reflect your local development hostname.
+
+For example, if your local development URL is `http://project-name.dev` you would update the file to read:
+```json
+...
+  "config": {
+    "devUrl": "http://project-name.dev"
+  }
+...
+```
+If your local development URL looks like `http://localhost:8888/project-name/` you would update the file to read:
+```json
+...
+  "config": {
+    "devUrl": "http://localhost:8888/project-name/"
+  }
+...
+```
+
+## Documentation
+
+Sage documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
+
+## Contributing
+
+Contributions are welcome from everyone. We have [contributing guidelines](CONTRIBUTING.md) to help you get started.
+
+## Community
+
+Keep track of development and community news.
+
+* Participate on the [Roots Discourse](https://discourse.roots.io/)
+* Follow [@rootswp on Twitter](https://twitter.com/rootswp)
+* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
+* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
