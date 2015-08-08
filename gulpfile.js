@@ -1,8 +1,26 @@
 var gulp = require('gulp');
 uglify = require ('gulp-uglify');
 
-gulp.task('default', function(){
+// Scripts Task 
+// Uglifies
+gulp.task('scripts', function(){
   gulp.src('js/*.js')
   .pipe(uglify())
   .pipe(gulp.dest('minjs'));
 });
+
+// Styles Task 
+// 
+gulp.task('styles', function(){
+  console.log('Runs Styles');
+});
+
+
+// Watch Task 
+// Watches JS
+gulp.task('watch', function(){
+  gulp.watch('js/*.js', ['scripts']);
+});
+// Default Tasks
+
+gulp.task('default', ['scripts', 'styles', 'watch']);
