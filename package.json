@@ -1,0 +1,22 @@
+{
+  "name": "jamie-theme",
+  "version": "1.0.0",
+  "description": "Jamie's video theme for wordpress",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achoukah/jamie-theme.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Anwar Choukah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achoukah/jamie-theme/issues"
+  },
+  "homepage": "https://github.com/achoukah/jamie-theme#readme"
+}

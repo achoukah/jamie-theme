@@ -1,26 +1,7 @@
-#Simple Website Boilerplate (SASS Version)
-This boilerplate has been designed to provide the very basic structure for building a new WordPress theme using Foundation 
+# Jamie Griffin's WordPress theme
 
 ##Features
 * HTML5
 * CSS3
-* PHP includes structure
-* Built on a custom build of Foundation
-* Uses jQuery 2.1.3
-* Modernizr
-* Normalize.css
-* SASS/CSS structure
+* Created using Gulp.js
 
-
-##Setup Notes
-You will need a SASS Preprocessor Application - I recommend Prepros.
-
-**SASS**
-There is one main SASS file - app.scss which outputs to /css/app.css - this is the only CSS file included in the site. Ensure your Prepros is correctly setup to process this file. Examine the contents of app.scss to see how it imports the other .scss files. Foundation SASS can be imported seletively (as required) or all at once via foundation.scss
-
-/scss/foundation/_settings.scss - use this file to change Foundation variables e.g. row width, padding etc.
-
-**JS**
-There is one main JS file - app.js which outputs to app-dist.js - this is included at the end of the document. There are two other JavaScript files included in the <head> : Modernizr and the jQuery library.
-
-Note: All CSS and JavaScript is loaded in the functions.php file.

@@ -1,5 +1,6 @@
-var gulp = require('gulp');
-uglify = require ('gulp-uglify');
+var gulp = require('gulp'),
+uglify = require ('gulp-uglify'),
+sass = require('gulp-ruby-sass');
 
 // Scripts Task 
 // Uglifies
@@ -10,9 +11,11 @@ gulp.task('scripts', function(){
 });
 
 // Styles Task 
-// 
+// Compiles SASS into CSS
 gulp.task('styles', function(){
-  console.log('Runs Styles');
+  gulp.src('scss/*.scss')
+  .pipe(sass())
+  .pipe(gulp.dest('css'));
 });
 
 
