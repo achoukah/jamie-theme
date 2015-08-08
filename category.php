@@ -3,13 +3,13 @@
 
 get_header(); ?>
 
-      <header class="sample_header">
+      <header>
         <div class="inner">
         <h1><?php echo single_cat_title(); ?></h1>
         </div>
       </header><!--/row-->
 
-      <section class="sample_content">
+      <section>
 
       <?php if ( have_posts() ) : ?>
 

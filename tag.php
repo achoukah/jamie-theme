@@ -3,13 +3,13 @@
 
 get_header(); ?>
 
-    <header class="sample_header">
+    <header>
       <div class="inner">
       <h1><?php echo single_tag_title(); ?></h1>
       </div>
     </header>
 
-    <section class="sample_content" id="category-posts">
+    <section id="category-posts">
 
     <?php if ( have_posts() ) : ?>
 

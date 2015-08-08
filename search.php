@@ -14,7 +14,7 @@ foreach($query_args as $key => $string) {
 
 get_header(); ?>
 
-    <header class="sample_header">
+    <header>
       <div class="inner">
       <?php if ($wp_query->found_posts == 1) { ?>
         <h1>1 result for <?php echo get_search_query(); ?></h1>
@@ -27,7 +27,7 @@ get_header(); ?>
 
     <?php if ( have_posts() ) : ?>
 
-    <section class="sample_content">
+    <section>
 
       <?$count = 0; //set up counter variable
       ?>
@@ -64,7 +64,7 @@ get_header(); ?>
 
     <?php else : ?>
 
-      <section class="sample_content">
+      <section>
         <div class="inner">
           <p>Sorry, but nothing matched your search criteria.</p>
         </div>

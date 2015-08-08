@@ -5,7 +5,7 @@ get_header(); ?>
 
     <?php if ( have_posts() ) : ?>
 
-      <header class="sample_header">
+      <header>
         <div class="inner">
         <?php echo get_avatar( get_the_author_meta('email') , 90 ); ?>
         <h1><?php echo get_the_author(); ?></h1>
@@ -13,7 +13,7 @@ get_header(); ?>
         </div>
       </header>
 
-      <section class="sample_content">
+      <section>
       <?php  
         global $query_string;
         query_posts( $query_string . '&posts_per_page=99' ); ?>

@@ -5,7 +5,7 @@
  */
 get_header(); ?>
 
-      <section class="sample_content">
+      <section>
         <div class="inner">
           <h1>We're sorry, we cannot find that page!</h1>
           <p>You're seeing this message because:</p>

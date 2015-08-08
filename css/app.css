@@ -97,6 +97,9 @@ h3 {
 h4 {
   font-size: 2em; }
 
+.no-jsmsg {
+  display: none; }
+
 .main-header {
   border: thin solid rebeccapurple;
   padding: 2em; }

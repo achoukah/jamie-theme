@@ -5,7 +5,7 @@ get_header(); ?>
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>     
         
-        <header class="sample_header">
+        <header>
           <div class="inner">
             <h1><?php the_title(); ?></h1>
             <aside>
@@ -15,7 +15,7 @@ get_header(); ?>
           </div>
         </header>
 
-        <article class="sample_content">
+        <article>
           <div class="inner">
           <?php the_content(); ?>
           </div>
@@ -27,7 +27,7 @@ get_header(); ?>
         <?php endwhile; ?>
 
       <?php else : ?>
-        <section class="sample_content">
+        <section>
           <div class="inner">
             <h1>Oops!</h1>
             <p>Sorry, but you are looking for something that isn't here.</p>
