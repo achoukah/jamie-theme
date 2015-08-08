@@ -1,0 +1,1 @@
+$(document).foundation(),$(function(){$(".example-carousel").slick({slidesToShow:1,slidesToScroll:1,dots:!0,arrows:!0})});
