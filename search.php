@@ -14,61 +14,69 @@ foreach($query_args as $key => $string) {
 
 get_header(); ?>
 
-    <header>
-      <div class="inner">
-      <?php if ($wp_query->found_posts == 1) { ?>
-        <h1>1 result for <?php echo get_search_query(); ?></h1>
-      <?php } else { ?>
-        <h1><?php echo $wp_query->found_posts; ?> results for <?php echo get_search_query(); ?></h1>
-      <?php } ?>
-      </div>
-    </header>
-
 
     <?php if ( have_posts() ) : ?>
+    <article>
+      <section>
 
-    <section>
+        <?$count = 0; //set up counter variable
+        ?>
 
-      <?$count = 0; //set up counter variable
-      ?>
+        <?php while ( have_posts() ) : the_post(); 
 
-      <?php while ( have_posts() ) : the_post(); 
+        $count++; //increment the variable by 1 each time the loop executes
+        ?>
+        
+          <div class="inner">
+            <div class="post">
+              <?php if ($wp_query->found_posts == 1) { ?>
+              <h1>1 result for <?php echo get_search_query(); ?></h1>
+              <?php } else { ?>
+              <h1><?php echo $wp_query->found_posts; ?> results for <?php echo get_search_query(); ?></h1>
+              <?php } ?>
+              <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
+              <?php
+                if ( has_post_thumbnail() ) {
+                  the_post_thumbnail('standard_thumbnail');
+                }
+              ?>
+              <?php the_title(); ?></a> <br />
 
-      $count++; //increment the variable by 1 each time the loop executes
-      ?>
-      
-        <div class="inner">
-          <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-          <?php
-            if ( has_post_thumbnail() ) {
-              the_post_thumbnail('standard_thumbnail');
-            }
-          ?>
-          <?php the_title(); ?></a> <br />
+              <?php echo get_the_date('jS F Y'); ?><br />
+              <?php the_author_posts_link(); ?> 
+            </div>
+          </div>
 
-          <?php echo get_the_date('jS F Y'); ?><br />
-          <?php the_author_posts_link(); ?> 
-        </div>
+        <?php
+          //every 3 items close new row and start a new one
+          if ($count % 3 == 0) { ?></div><div class="row"><?php } ?>  
 
-      <?php
-        //every 3 items close new row and start a new one
-        if ($count % 3 == 0) { ?></div><div class="row"><?php } ?>  
-
-      <?php endwhile; ?>
-    </section>
+        <?php endwhile; ?>
+      </section>
+      <?php get_sidebar(); ?>
+    </article>
     
-    <nav>>
+    <nav>
       <div class="nav-previous"><?php next_posts_link( 'Previous' ); ?></div>
       <div class="nav-next"><?php previous_posts_link( 'Next' ); ?></div>
     </nav>
 
     <?php else : ?>
-
-      <section>
-        <div class="inner">
-          <p>Sorry, but nothing matched your search criteria.</p>
-        </div>
-      </section>
+      <article>
+        <section>
+          <div class="inner">
+            <div class="post">
+              <?php if ($wp_query->found_posts == 1) { ?>
+              <h1>1 result for <?php echo get_search_query(); ?></h1>
+              <?php } else { ?>
+              <h1><?php echo $wp_query->found_posts; ?> results for <?php echo get_search_query(); ?></h1>
+              <?php } ?>
+              <p>Sorry, but nothing matched your search criteria.</p>
+            </div>
+          </div>
+        </section>
+        <?php get_sidebar(); ?>
+      </article>
 
     <?php endif; ?>
 

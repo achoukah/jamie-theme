@@ -15,7 +15,7 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Anwar Choukah, Jamie Griffin">
 
-    <link href='http://fonts.googleapis.com/css?family=Work+Sans:100,200,400,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Work+Sans:100,200,400,600,800|Source+Code+Pro:300' rel='stylesheet' type='text/css'>
 
     <!-- Google Analytics to go here -->
 
@@ -34,10 +34,10 @@
       </ul>
       </nav>
 
-      <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+      <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="search">
         <fieldset>
           <label for="search">Search</label>
-          <input type="text" name="s" id="search" value="<?php the_search_query(); ?>">
+          <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Enter a keyword or phrase">
           <input type="submit" name="submit" value="Search">
         </fieldset>
       </form>

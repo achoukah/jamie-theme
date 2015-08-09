@@ -1,28 +1,27 @@
-<?php
-/* The default template for displaying a single post */
-get_header(); ?>
+<?php get_header(); ?>
 
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>     
-        
-        <header>
-          <div class="inner">
-            <h1><?php the_title(); ?></h1>
-            <aside>
-            Posted to: <?php echo get_the_category_list() ?>
-            Tagged with: <?php echo the_tags(); ?>
-            </aside>
-          </div>
-        </header>
 
         <article>
-          <div class="inner">
-          <?php the_content(); ?>
-          </div>
+          <section>
+            <div class="inner">
+              <div class="post">
+                <h1><?php the_title(); ?></h1>
+                <?php the_content(); ?>
+                Posted to: <?php echo get_the_category_list() ?>
+                Tagged with: <?php echo the_tags(); ?>
+
+              </div>
+              <?php //Comment form
+
+              comments_template('/partials/comments.php'); ?>
+            </div>
+          </section>
+          <?php get_sidebar(); ?>
         </article>
 
-        <?php //Comment form 
-        comments_template('/partials/comments.php'); ?>
+        
 
         <?php endwhile; ?>
 

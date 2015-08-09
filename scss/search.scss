@@ -1,0 +1,58 @@
+form.search {
+  padding: 0;
+  font-size: 1em;
+  position: relative;
+  right: 1em;
+  top: 3.4rem;
+  
+  label {
+    display: none;
+  }
+  input {
+    padding: .5em;
+    border: 0;
+    transition: all .2s ease-in-out;
+    font-family: $bodytext;
+    font-size: 1em;
+  }
+  input[type=text] {
+    width: 10em;
+    background-color: $wh-tr-2;
+    text-align: right;
+
+    &:focus {
+      background-color: $wh-tr-7;
+      width: 20em;
+      outline: none;
+    }
+  }
+  input[type=submit] {
+    text-indent: -9999px;
+    background-image: url(../images/search-lupe.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 3em;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+      width: 3.4em;
+      background-color: $wh-lt;
+    }
+  }
+}
+.search-large {
+  position: static !important;
+  left: 0;
+  top: 0;
+
+  input[type=text] {
+
+    &:focus {
+      background-color: $wh-tr-7;
+      width: 100%;
+      outline: none;
+    }
+  }
+}

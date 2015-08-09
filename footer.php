@@ -4,7 +4,8 @@
 
     <footer class="main-footer">
       <nav class="footer-menu">
-      <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+      
+      &copy;<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Jamie Griffin</a>
       </nav>
     </footer>
 
