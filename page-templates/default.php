@@ -23,5 +23,5 @@ get_header(); ?>
         <?php endif; ?>
         </div>
       </section>
-
+<?php get_sidebar(); ?> 
 <?php get_footer(); ?>       

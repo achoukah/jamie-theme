@@ -15,13 +15,17 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Anwar Choukah, Jamie Griffin">
 
+    <link href='http://fonts.googleapis.com/css?family=Work+Sans:100,200,400,800' rel='stylesheet' type='text/css'>
+
     <!-- Google Analytics to go here -->
 
     <?php wp_head(); ?>
   </head>
   <body>
     <header class="main-header">    
-      <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Homepage">Homepage</a>
+      <div class="logo"></div>
+
+      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Griff<strong>monkey</strong></a></h1>
 
       <nav class="main-menu">
       <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>

@@ -1,15 +1,59 @@
 .main-header {
-  border: thin solid rebeccapurple;
-  padding: 2em;
+  padding: 0 2em;
+  height: 160px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  justify-content: space-between;
+  flex-flow: row wrap;
 
   .logo {
-    display: block;
-    text-indent: -9999px;
-    width: 4em;
-    height: 4em;
+    // display: block;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-image: url(../images/griffmonkey-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -10;
+    content: '';
+    
+    min-width: auto;
+  }
+  h1 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 8px;
+    margin-left: 180px;
+    padding-top: 2em;
+    min-width: auto;
+    flex-grow: 2;
+
+    a {
+      color: $lt;
+
+      &:hover {
+        text-shadow: 0 .4em 0 $bk-tr-4;
+      }
+      strong {
+        color: $bl;
+      }
+    }
   }
   nav {
-
+    order: 3;
+    flex-grow: 4;
+    min-width: 100%;
+    padding-left: 180px;
+    padding-bottom: 2em;
+    
+    li {
+      text-transform: uppercase;
+    }
+    a {
+      color: $lt;
+    }
   }
   form {
 

@@ -32,12 +32,19 @@
   $bk-tr-8: rgba($bk-lt, .8);
   $bk-tr-9: rgba($bk-lt, .9);
 
+  $dk: #515151;
+  $md: #626262;
+  $lt: #ccc;
+  $bl: #00f9fa;
+  $rd: #ed6759;
+
+
   $fb: #3b5a94;
   $tw: #00c7f5;
   $ig: #517fa4;
   $go: #d8473c;
   $pi: #cb2027;
 
-  $link: $rd-md;
-  $link-hover: $rd-lt;
+  $link: $rd;
+  $link-hover: $bl;
   $link-active: $rd-dk;

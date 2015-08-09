@@ -1,0 +1,21 @@
+aside {
+  background: $bk-dk;
+  width: 300px;
+  display: inline-block;
+  
+  h1, h2, p {
+    padding: 1rem;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    line-height: 1.5;
+  }
+  img {
+    display: block;
+  }
+}
