@@ -2,9 +2,9 @@
   padding: 0 2em;
   height: 160px;
   display: flex;
-  align-items: flex-start;
+  align-content: flex-start;
   position: relative;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: row wrap;
 
   .logo {
@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -10;
-    content: '';
+    // content: '';
     
     min-width: auto;
   }
@@ -26,7 +26,7 @@
     font-weight: 100;
     letter-spacing: 8px;
     margin-left: 180px;
-    padding-top: 2em;
+    margin-top: 2em;
     min-width: auto;
     flex-grow: 2;
 
@@ -43,19 +43,74 @@
   }
   nav {
     order: 3;
-    flex-grow: 4;
     min-width: 100%;
     padding-left: 180px;
-    padding-bottom: 2em;
-    
+    position: relative;
+    top: -1.6em;
+    text-indent: -9999px;
+    height: 0;
+    display: inline-block;
+
     li {
       text-transform: uppercase;
+      padding: .2em 2em .2em 0;
+      letter-spacing: 2px;
+      display: inline;
+      text-indent: 0;
+    }
+    .categories {
+      // display: none;
     }
     a {
       color: $lt;
+
+      &:hover {
+        color: $wh-lt;
+      }
     }
   }
   form {
+    padding: 4.6em 1em 0 0;
+    font-size: 1em;
+    
+    * {
+      -webkit-appearance: none;  
+    }
+    label {
+      visibility: hidden;
+    }
+    input {
+      padding: .5em;
+      border: 0;
+      transition: all .2s ease-in-out;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 1em;
+    }
+    input[type=text] {
+      width: 10em;
+      background-color: $wh-tr-2;
+      text-align: right;
 
+      &:focus {
+        background-color: $wh-tr-7;
+        width: 20em;
+        outline: none;
+      }
+    }
+    input[type=submit] {
+      text-indent: -9999px;
+      background-image: url(../images/search-lupe.png);
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      width: 3em;
+      display: inline-block;
+      cursor: pointer;
+
+      &:hover {
+        width: 3.4em;
+        background-color: $wh-lt;
+      }
+    }
   }
 }

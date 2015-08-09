@@ -28,7 +28,10 @@
       <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Griff<strong>monkey</strong></a></h1>
 
       <nav class="main-menu">
-      <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
+      <!-- <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?> -->
+      <ul>
+        <?php wp_list_categories('exclude=1'); ?>
+      </ul>
       </nav>
 
       <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
