@@ -2,11 +2,12 @@
 //Main footer
 ?>
 
-    <footer class="main-footer">
-      <nav class="footer-menu">
-      
-      &copy;<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Jamie Griffin</a>
-      </nav>
+    <footer class="main-footer">      
+      <ul>
+        <li>&copy;<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Jamie Griffin</a></li>
+        <li>Theme design/coding: <a href="http://anwarchoukah.com">Anwar Choukah</a></li>
+
+      </ul>
     </footer>
 
     <div class="no-jsmsg">

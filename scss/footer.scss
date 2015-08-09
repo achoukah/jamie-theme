@@ -5,13 +5,16 @@ footer {
   border-top: medium solid $bk-md;
   background-color: $bk-dk;
   text-align: center;
+  color: $md;
 
   font-size: .8em;
 
   ul {
-
+    
   }
   li {
-
+    display: inline;
+    padding: 1em;
+    letter-spacing: 1px;
   }
 }
