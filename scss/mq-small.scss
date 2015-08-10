@@ -1,0 +1,79 @@
+// GLOBAL 
+
+  body {
+    font-size: 16px;
+
+  }
+  article {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 .5em;
+  }
+  section {
+    width: 100%;
+
+    .post {
+
+      iframe {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  }
+
+// HEADER 
+  .main-header {
+    padding: 0;
+
+    .logo {
+      width: 80px;
+      height: 80px;
+    }
+    h1 {
+      font-size: 1.5em;
+      margin-top: 1.4em;
+      margin-left: 52px;
+      text-align: right;
+    }
+    form {
+      width: 100%;
+      text-align: right;
+      font-size: 80%;
+
+      fieldset {
+        width: 100%;
+      }
+      &.search {
+        top: .5em;
+        right: .5rem;
+
+      }
+    }
+  }
+// NAV 
+  .main-header {
+    nav {
+      order: 1;
+      min-width: 100%;
+      padding-left: 0;
+      position: relative;
+      // top: -1.6em;
+      text-indent: -9999px;
+      height: 0;
+      display: inline-block;
+
+      li {
+        text-transform: uppercase;
+        padding: .2em 2em .2em 0;
+        letter-spacing: 2px;
+        display: inline;
+        text-indent: 0;
+      }
+    }
+  }
+// ASIDE 
+  aside {
+    width: 100%;
+    margin-top: 1em;
+  }

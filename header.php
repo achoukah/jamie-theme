@@ -9,7 +9,7 @@
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title(); ?></title>
 
     <meta name="robots" content="index, follow">
@@ -37,7 +37,7 @@
       <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="search">
         <fieldset>
           <label for="search">Search</label>
-          <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Enter a keyword or phrase">
+          <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search GRIFFMONKEY">
           <input type="submit" name="submit" value="Search">
         </fieldset>
       </form>

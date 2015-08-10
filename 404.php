@@ -21,7 +21,7 @@ get_header(); ?>
     
             <form class="search search-large" action="<?php echo home_url( '/' ); ?>" method="get">
               <label for="search">Search</label>
-              <input id="search" name="s" type="text" value="<?php the_search_query(); ?>" placeholder="Enter a keyword or phrase">
+              <input id="search" name="s" type="text" value="<?php the_search_query(); ?>" placeholder="Search GRIFFMONKEY">
               <input name="submit" type="submit" value="Search">
             </form>
           </div>
