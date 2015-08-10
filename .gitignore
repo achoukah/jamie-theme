@@ -4,3 +4,7 @@ node_modules
 .idea
 .zip
 .psd
+.css
+*.map
+
+*.codekit
