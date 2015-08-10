@@ -17,4 +17,11 @@ footer {
     padding: 1em;
     letter-spacing: 1px;
   }
+  a {
+    color: $wh-tr-5;
+
+    &:hover {
+      color: $wh-tr-7;
+    }
+  }
 }

@@ -1,31 +1,10 @@
-form.search {
-  // padding: 0;
-  // margin: 0;
-  font-size: 1em;
-  position: relative;
-  right: 0;
-  top: 3.4rem;
-  
+.search {
+
   label {
     display: none;
   }
   input {
-    padding: .5em;
-    border: 0;
-    transition: all .2s ease-in-out;
-    font-family: $bodytext;
-    font-size: 1em;
-  }
-  input[type=text] {
-    width: 10em;
-    background-color: $wh-tr-2;
-    text-align: right;
-
-    &:focus {
-      background-color: $wh-tr-7;
-      width: 16em;
-      outline: none;
-    }
+    display: inline-block;
   }
   input[type=submit] {
     text-indent: -9999px;
@@ -36,24 +15,47 @@ form.search {
     width: 3em;
     display: inline-block;
     cursor: pointer;
+    float: right;
 
     &:hover {
-      width: 3.4em;
       background-color: $wh-lt;
     }
   }
 }
+
+form.search-header {
+  position: relative;
+  right: 0;
+  top: 3.4rem;
+  
+  input[type=text] {
+    width: 10em;
+    text-align: right;
+
+    &:focus {
+      width: 16em;
+    }
+  }
+  input[type=submit] {
+    
+    &:hover {
+      width: 3.4em;
+    }
+  }
+  
+}
 .search-large {
-  position: static !important;
-  left: 0;
-  top: 0;
+  
 
   input[type=text] {
+    width: calc(100% - 3em);
 
     &:focus {
       background-color: $wh-tr-7;
-      width: 100%;
-      outline: none;
+      
     }
+  }
+  input[type=submit] {
+    width: 3em;
   }
 }

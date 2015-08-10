@@ -1,0 +1,51 @@
+ article {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    padding: 0 1em;
+    margin: auto;
+  }
+  section {
+    flex: 1;
+    background: $wh-tr-1;
+    padding: 1em;
+    max-width: 620px;
+    box-shadow: inset 0 0 10em $wh-tr-2;
+
+    h1 {
+      font-size: 1.2em;
+      font-weight: 600;
+      margin-bottom: .5em;
+      text-transform: uppercase;
+    }
+    .post {
+      margin-bottom: 3em;
+      padding-top: 1em;
+      border-top: medium solid $dk;
+
+      &:nth-child(1) {
+        border: 0;
+        padding-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      iframe {
+        width: 100%;
+      }
+      p {
+        line-height: 1.4;
+        margin-bottom: 1em;
+        font-weight: 100;
+        letter-spacing: 1px;
+      }
+      ul {
+        margin: 0 0 1em;
+      }
+      li {
+        margin: .5em 1em;
+        list-style: disc;
+      }
+    }
+  }

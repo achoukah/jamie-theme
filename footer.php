@@ -3,11 +3,21 @@
 ?>
 
     <footer class="main-footer">      
+
+      <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="search search-large">
+        <fieldset>
+          <label for="search">Search</label>
+          <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search">
+          <input type="submit" name="submit" value="Search">
+        </fieldset>
+      </form>
+      
       <ul>
         <li>&copy;<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Jamie Griffin</a></li>
         <li>Theme design/coding: <a href="http://anwarchoukah.com">Anwar Choukah</a></li>
 
       </ul>
+
     </footer>
 
     <div class="no-jsmsg">

@@ -34,7 +34,7 @@
       </ul>
       </nav>
 
-      <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="search">
+      <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="search search-header">
         <fieldset>
           <label for="search">Search</label>
           <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search">
