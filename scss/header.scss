@@ -1,5 +1,7 @@
 .main-header {
-  padding: 0 2em;
+  width: 980px;
+  margin: auto;
+  padding: 0 1em;
   height: 160px;
   display: flex;
   align-content: flex-start;
@@ -8,15 +10,15 @@
   flex-flow: row wrap;
 
   .logo {
-    position: absolute;
-    width: 160px;
-    height: 160px;
+    width: 12em;
+    height: 12em;
     background-image: url(../images/griffmonkey-logo.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -10;
-    top: 2em;
-    left: 0;
+    position: absolute;
+    top: .8em;
+    left: -2.6em;
     min-width: auto;
   }
   h1 {
@@ -24,8 +26,8 @@
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing: 8px;
-    margin-left: 180px;
-    margin-top: 2em;
+    margin-left: 3.6em;
+    margin-top: 1.6em;
     min-width: auto;
     flex-grow: 2;
 
@@ -43,8 +45,8 @@
   nav {
     order: 3;
     min-width: 100%;
-    padding-left: 180px;
-    position: relative;
+    padding-left: 10em;
+    // position: relative;
     // top: -1.6em;
     text-indent: -9999px;
     height: 0;

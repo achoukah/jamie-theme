@@ -37,7 +37,7 @@
       <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="search">
         <fieldset>
           <label for="search">Search</label>
-          <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search GRIFFMONKEY">
+          <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search">
           <input type="submit" name="submit" value="Search">
         </fieldset>
       </form>
