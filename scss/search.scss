@@ -13,7 +13,7 @@
       background-size: 40%;
       background-repeat: no-repeat;
       background-position: 50%;
-      width: 3em;
+      width: 50px;
       display: inline-block;
       cursor: pointer;
       float: right;
@@ -30,11 +30,11 @@
     top: 3.4rem;
     
     input[type=text] {
-      width: 10em;
+      width: 200px;
       text-align: right;
 
       &:focus {
-        width: 16em;
+        width: 250px;
       }
     }
     input[type=submit] {
@@ -68,15 +68,23 @@
     width: 980px;
     padding: 0 4em 4em;
     margin: auto;
+    font-size: 130%;
 
     label {
       display: block;
       border-top: thin dashed $wh-tr-1;
       margin: 1em;
     }
+    input {
+      display: inline-block;
+    }
 
     input[type=text] {
-      width: auto;
+      width: 20vw;
+
+      &:focus {
+        width: 25vw;
+      }
     }
     input[type=submit] {
       float: none;

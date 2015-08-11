@@ -5,15 +5,14 @@ get_header(); ?>
 
     <?php if ( have_posts() ) : ?>
 
-      <header>
-        <div class="inner">
-        <?php echo get_avatar( get_the_author_meta('email') , 90 ); ?>
+      
+        
+   
+    <article>
+      <section>
+      <?php echo get_avatar( get_the_author_meta('email') , 90 ); ?>
         <h1><?php echo get_the_author(); ?></h1>
         <p><?php echo get_the_author_meta('description'); ?></p>
-        </div>
-      </header>
-
-      <section>
       <?php  
         global $query_string;
         query_posts( $query_string . '&posts_per_page=99' ); ?>
@@ -46,6 +45,8 @@ get_header(); ?>
         </div>
 
       </section>
+      <?php get_sidebar(); ?>
+    </article>
 
     <?php endif; ?>
 

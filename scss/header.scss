@@ -1,6 +1,6 @@
 .main-header {
   width: 980px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 1em;
   height: 160px;
   display: flex;
@@ -12,14 +12,24 @@
   .logo {
     width: 12em;
     height: 12em;
-    background-image: url(../images/griffmonkey-logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: -10;
+    
+    // z-index: -1;
     position: absolute;
     top: .8em;
     left: -2.6em;
     min-width: auto;
+
+    a {
+      display: block;
+      width: inherit;
+      height: inherit;
+      background-image: url(../images/griffmonkey-logo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &:hover {
+      }
+    }
   }
   h1 {
     font-size: 1.8em;

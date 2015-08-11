@@ -3,17 +3,14 @@
 
 get_header(); ?>
 
-      <header>
-        <div class="inner">
-        <h1><?php echo single_cat_title(); ?></h1>
-        </div>
-      </header><!--/row-->
+      
+        
 
       <section>
 
       <?php if ( have_posts() ) : ?>
 
-        <div class="inner"> 
+        <h1><?php echo single_cat_title(); ?></h1>
 
       <?$count = 0; //set up counter variable
       ?>

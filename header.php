@@ -23,7 +23,9 @@
   </head>
   <body>
     <header class="main-header">    
-      <div class="logo"></div>
+      <div class="logo">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+      </div>
 
       <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Griff<strong>monkey</strong></a></h1>
 
