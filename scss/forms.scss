@@ -11,7 +11,7 @@ form {
   label {
     display: block;
     margin-top: 1em;
-    padding: 1em 0 1em;
+    padding: 1em 0 .25em;
   }
   input {
     padding: .5em;
@@ -33,3 +33,106 @@ form {
     }
   }
 }
+
+// COMMENT FORM 
+
+  .post-comments {
+    margin: 1em 0;
+    padding: 2em 0;
+    background: transparent;
+    box-shadow: none;
+    border-top: thin solid $lt;
+    width: 100%;
+    font-size: 90%;
+    font-weight: 200;
+    line-height: 1.6;
+    
+    
+    h3 {
+      font-size: 1.2em;
+      font-weight: 400;
+      margin-bottom: .5em;
+      padding-bottom: .5em;
+    }
+    div > div {
+      line-height: 1.5;
+      background: $bk-tr-4;
+      padding: 1em;
+      margin-bottom: 1em;
+
+      p {
+        margin-bottom: 1em;
+        font-size: .9em;
+        font-weight: 400;
+        // text-align: right;
+      }
+    }
+  }
+  .comments_form {
+    margin: 0;
+    padding: 1em;
+    background: $bk-tr-9;
+    box-shadow: none;
+    width: 100%;
+
+    h3 {
+      font-size: 1em;
+      font-weight: 400;
+      margin-bottom: .5em;
+      padding-bottom: .5em;
+      border-bottom: thin dotted $wh-tr-5;
+    }
+    p {
+      margin-bottom: 1em;
+      
+      &.logged-in-as {
+
+        a {
+
+        }
+      }
+    }
+  }
+  .comment-form {
+    label {
+      display: block;
+    }
+    textarea {
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 6em;
+      max-height: 20em;
+      padding: 1em;
+      background-color: $wh-tr-3;
+      transition: all .2s ease-in-out;
+      font-family: $bodytext;
+      font-size: 1em;
+      border: 0;
+
+      &:focus {
+        outline: none;
+        background-color: $wh-tr-7;
+      }
+    }
+  }
+  .form-allowed-tags {
+    font-size: .8em;
+    letter-spacing: 1px;
+  }
+
+  .form-submit {
+    input[type=submit] {
+      font-family: $bodytext;
+      font-size: 1em;
+      padding: 1em 3em;
+      background-color: $rd;
+      color: $wh-lt;
+      border: 0;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        background-color: darken($rd, 10);
+      }
+    }
+  }

@@ -40,11 +40,6 @@
     </header>
 
     <nav class="main-menu" id="menu">
-      <!-- <ul>
-        <li><a href="<?php bloginfo('home'); ?>">Home</a></li>
-        <?php wp_list_categories('orderby=id'); ?>
-      </ul> -->
-
       <ul>
         <li <?php if(is_home()) { ?> class="current-cat"<?php } ?>>
         <a href="<?php bloginfo('home'); ?>">Home</a></li>
@@ -54,6 +49,4 @@
     
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
     <label for="nav-trigger"></label>
-
-    
     

@@ -7,39 +7,36 @@ if ( post_password_required() )
 ?>
         
         <section class="post-comments">
-          <div class="inner">
-            <?php 
-              //Query approved comments for the current post
-              $postid = get_the_ID(); 
+          <?php 
+            //Query approved comments for the current post
+            $postid = get_the_ID(); 
 
-              $comments_query = new WP_Comment_Query;
-              $comments = $comments_query->query( array('status' => 'approve') );
+            $comments_query = new WP_Comment_Query;
+            $comments = $comments_query->query( array('status' => 'approve') );
 
-              if( $comments ) {
-            ?>
+            if( $comments ) {
+          ?>
 
-            <h3>Comments (<?php comments_number( '0', '1', '%' );; ?>)</h3>
+          <h3>Comments (<?php comments_number( '0', '1', '%' );; ?>)</h3>
 
-            <?php
-              foreach($comments as $comm) { ?>
-                <div>
-                <p><?php echo $comm->comment_author ;?>, <?php echo get_comment_date( '', $comm ); ?></p>
-                <?php echo $comm->comment_content; ?>
-                </div>
-            <?php } ?>
+          <?php
+            foreach($comments as $comm) { ?>
+              <div>
+              <p><?php echo $comm->comment_author ;?>, <?php echo get_comment_date( '', $comm ); ?></p>
+              <?php echo $comm->comment_content; ?>
+              </div>
+          <?php } ?>
 
-              <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : //comments nav ?>
-              <nav>
-                <div class="nav-previous"><?php previous_comments_link(); ?></div>
-                <div class="nav-next"><?php next_comments_link(); ?></div>
-              </nav>
-              <?php endif; //if comments nav ?>
+          <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : //comments nav ?>
+          <nav>
+            <div class="nav-previous"><?php previous_comments_link(); ?></div>
+            <div class="nav-next"><?php next_comments_link(); ?></div>
+          </nav>
+          <?php endif; //if comments nav ?>
 
-              <?php } else { //if we have comments ?>
-              <p>There are no comments for this post.</p>
-              <?php } ?>
-
-          </div>
+          <?php } else { //if we have comments ?>
+          <p>There are no comments for this post.</p>
+          <?php } ?>
         </section>
 
         <?php //If comments are open for this post
