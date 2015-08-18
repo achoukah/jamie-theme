@@ -4,7 +4,7 @@ aside {
   display: inline-block;
   
   h1, h2, p {
-    padding: 1rem;
+    padding: 1rem 1rem .5rem;
   }
   h1 {
     font-size: 1em;
@@ -20,5 +20,18 @@ aside {
   }
   img {
     display: block;
+  }
+  ul {
+    margin: 0 1rem;
+  }
+  li {
+
+    &:hover {
+      background: $wh-tr-1;
+    }
+  }
+  span {
+    text-align: right;
+    float: right;
   }
 }

@@ -5,17 +5,19 @@
 
         <article>
           <section>
-            <div class="inner">
               <div class="post">
                 <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
-                Posted to: <?php echo get_the_category_list() ?>
-                Tagged with: <?php echo the_tags(); ?>
+                
+                <div class="article-meta">
+                  <?php echo get_the_category_list() ?>
+                  <?php echo the_tags(); ?>
+                </div>
 
-              </div>
+
               <?php //Comment form
-
               comments_template('/partials/comments.php'); ?>
+              
             </div>
           </section>
           <?php get_sidebar(); ?>

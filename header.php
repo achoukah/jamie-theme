@@ -2,11 +2,7 @@
 // Main header
 ?>
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9" lang="en"><![endif]-->
-<!--[if IE 9]><html class="no-js lt-ie10" lang="en"><![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +12,8 @@
     <meta name="author" content="Anwar Choukah, Jamie Griffin">
 
     <link href='http://fonts.googleapis.com/css?family=Work+Sans:100,200,400,600,800|Source+Code+Pro:300' rel='stylesheet' type='text/css'>
+
+    <link href="<?php bloginfo(‘atom_url’); ?>" rel="alternate" type="application/rss+xml" title="RSS Feed - Jamie Griffin's Griff Monkey">
 
     <!-- Google Analytics to go here -->
 
@@ -29,12 +27,7 @@
 
       <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Griff<strong>monkey</strong></a></h1>
 
-      <nav class="main-menu">
-      <!-- <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?> -->
-      <ul>
-        <?php wp_list_categories('exclude=1'); ?>
-      </ul>
-      </nav>
+
 
       <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="search search-header">
         <fieldset>
@@ -45,3 +38,22 @@
       </form>
 
     </header>
+
+    <nav class="main-menu" id="menu">
+      <!-- <ul>
+        <li><a href="<?php bloginfo('home'); ?>">Home</a></li>
+        <?php wp_list_categories('orderby=id'); ?>
+      </ul> -->
+
+      <ul>
+        <li <?php if(is_home()) { ?> class="current-cat"<?php } ?>>
+        <a href="<?php bloginfo('home'); ?>">Home</a></li>
+        <?php wp_list_categories('title_li=&orderby=id'); ?>
+      </ul>
+    </nav>
+    
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+
+    
+    

@@ -12,8 +12,6 @@
   .logo {
     width: 12em;
     height: 12em;
-    
-    // z-index: -1;
     position: absolute;
     top: .8em;
     left: -2.6em;
@@ -52,16 +50,14 @@
       }
     }
   }
-  nav {
-    order: 3;
-    min-width: 100%;
-    padding-left: 10em;
-    // position: relative;
-    // top: -1.6em;
-    text-indent: -9999px;
-    height: 0;
-    display: inline-block;
+}
+.main-menu {
+  min-width: 100%;
+  padding-left: 10em;
+  // height: 0;
+  display: inline-block;
 
+  ul {
     li {
       text-transform: uppercase;
       padding: .2em 2em .2em 0;
@@ -69,15 +65,17 @@
       display: inline;
       text-indent: 0;
     }
-    .categories {
-      // display: none;
-    }
-    a {
-      color: $lt;
+  }
 
-      &:hover {
-        color: $wh-lt;
-      }
+  a {
+    color: $lt;
+
+    &:hover {
+      color: $wh-lt;
     }
   }
+}
+.nav-trigger,
+label[for="nav-trigger"] {
+  visibility: hidden;
 }

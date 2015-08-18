@@ -18,11 +18,13 @@
     font-size: 100%;
 
     display: flex;
+    min-width: 100vw;
     min-height: 100vh;
     flex-direction: column;
 
     font-family: $bodytext;
     font-weight: 400;
+    overflow-x: hidden;
   }
 
  

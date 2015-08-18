@@ -2,6 +2,13 @@
 
   body {
     font-size: 16px;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
 
   }
   article {
@@ -15,26 +22,33 @@
 
     .post {
 
-      iframe {
-        width: 100%;
-        height: 200px;
-      }
+      // iframe {
+      //   width: 100%;
+      //   height: 200px;
+      // }
     }
   }
 
 // HEADER 
   .main-header {
     padding: 0;
+    width: 100vw;
 
     .logo {
-      width: 80px;
-      height: 80px;
+      width: 10em;
+      height: 10em;
+      top: .5em;
+      left: .5em;
     }
     h1 {
       font-size: 1.5em;
       margin-top: 1.4em;
-      margin-left: 52px;
-      text-align: right;
+      margin-left: 5em;
+
+      strong {
+        display: block;
+        font-size: .8em;
+      }
     }
     form {
       width: 100%;
@@ -47,31 +61,73 @@
       &.search {
         top: .5em;
         right: .5rem;
-
       }
     }
   }
+
 // NAV 
-  .main-header {
-    nav {
-      order: 1;
-      min-width: 100%;
-      padding-left: 0;
-      position: relative;
-      // top: -1.6em;
-      text-indent: -9999px;
-      height: 0;
-      display: inline-block;
+  .main-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    // left: 100vw;
+    bottom: 0;
+    z-index: 0;
 
+    ul {
       li {
-        text-transform: uppercase;
-        padding: .2em 2em .2em 0;
-        letter-spacing: 2px;
-        display: inline;
-        text-indent: 0;
+        display: block;
       }
     }
+    
   }
+  .nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+  label[for="nav-trigger"] {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,
+      <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 24 24' enable-background='new 0 0 24 24' xml:space='preserve' fill='rgba(255,255,255,.8)'>
+        <rect width='24' height='3'/>
+        <rect y='16' width='24' height='3'/>
+        <rect y='8' width='24' height='3'/>
+      </svg>");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &:before {
+      content: 'Menu:';
+      display: block;
+      text-align: right;
+      position: relative;
+      right: 60px;
+    }
+  }
+  // Make the Magic Happen
+  .nav-trigger + label, article {
+    transition: all 0.2s;
+  }
+
+  .nav-trigger:checked + label {
+    // right: 50vw;
+  }
+
+  .nav-trigger:checked ~ article {
+    left: 200px;
+    // box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    border: thick solid rebeccapurple;
+  }
+  
 // ASIDE 
   aside {
     width: 100%;
