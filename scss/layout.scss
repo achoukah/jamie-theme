@@ -30,6 +30,15 @@
       &:last-child {
         margin-bottom: 0;
       }
+      .wp-caption {
+        width: 100% !important;
+        
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      
 
       iframe {
         width: 100%;
