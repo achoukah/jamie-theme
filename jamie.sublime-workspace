@@ -29,9 +29,6 @@
 			]
 		]
 	},
-	"buffers":
-	[
-	],
 	"build_system": "",
 	"build_system_choices":
 	[
@@ -151,12 +148,16 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme"
-	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/category.php",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/scss/search.scss",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/scss/global.scss",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/scss/layout.scss",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/scss/header.scss",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/search.php",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/author.php",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/header.php",
 		"/Users/achoukah/Documents/anwarchoukah.com/index.html",
 		"/Users/achoukah/Documents/anwarchoukah.com/error.html",
 		"/Users/achoukah/Documents/anwarchoukah.com/contact.html",
@@ -382,19 +383,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"sheets":
-			[
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 32.0
@@ -438,7 +426,6 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "jamie.sublime-project",
 	"replace":
 	{
 		"height": 60.0
@@ -471,7 +458,6 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
 	"settings":
 	{
 	},

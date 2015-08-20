@@ -49,6 +49,4 @@
     
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
     <label for="nav-trigger"></label>
-
-    
     

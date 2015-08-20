@@ -52,10 +52,17 @@
   }
 }
 .main-menu {
+<<<<<<< HEAD
   width: 980px;
   margin: auto;
   padding-left: 7em;
+=======
+  min-width: 100%;
+  // padding-left: 10em;
+  // height: 0;
+>>>>>>> master
   display: inline-block;
+  
 
   ul {
     li {
