@@ -38,12 +38,13 @@
     margin-top: 1.2em;
     min-width: auto;
     flex-grow: 2;
+    z-index: 140;
 
     a {
       color: $lt;
 
       &:hover {
-        text-shadow: 0 .4em 0 $bk-tr-4;
+        letter-spacing: 9px;
       }
       strong {
         color: $bl;
@@ -52,16 +53,11 @@
   }
 }
 .main-menu {
-<<<<<<< HEAD
   width: 980px;
   margin: auto;
   padding-left: 7em;
-=======
-  min-width: 100%;
-  // padding-left: 10em;
-  // height: 0;
->>>>>>> master
   display: inline-block;
+  z-index: 10;
   
 
   ul {
@@ -75,6 +71,7 @@
     .current-cat {
       a {
         color: $wh-lt;
+        font-weight: 400;
       }
     }
   }
@@ -83,7 +80,7 @@
     color: $lt;
 
     &:hover {
-      color: $wh-lt;
+      color: $bl;
     }
   }
 }
