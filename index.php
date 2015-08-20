@@ -2,7 +2,6 @@
 
   <article>
     <section>
-      <div class="inner">
       <?php if (have_posts()) :
 
         while (have_posts()) : the_post(); ?>
@@ -18,7 +17,6 @@
         <p>Sorry, but you are looking for something that isn't here.</p>
 
       <?php endif; ?>
-      </div>
     </section>
     <?php get_sidebar(); ?>
   </article>
