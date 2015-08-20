@@ -29,11 +29,13 @@
 
       <?php else : ?>
         <section>
-          <div class="inner">
             <h1>Oops!</h1>
             <p>Sorry, but you are looking for something that isn't here.</p>
           </div>
-        </section>
+          </section>
+          <?php get_sidebar(); ?>
+        </article>
+
       <?php endif; ?>
       
       

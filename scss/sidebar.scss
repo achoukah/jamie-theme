@@ -3,7 +3,7 @@ aside {
   width: 300px;
   display: inline-block;
   
-  h1, h2, p {
+  h1, h2 {
     padding: 1rem 1rem .5rem;
   }
   h1 {
@@ -17,6 +17,7 @@ aside {
     line-height: 1.5;
     font-size: .8em;
     color: $wh-tr-4;
+    padding: 0 1rem .5rem;
   }
   img {
     display: block;

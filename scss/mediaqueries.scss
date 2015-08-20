@@ -1,6 +1,5 @@
 // Small screens
   @media only screen
-  and (min-width : 320px)
   and (max-width: 767px) {
     @import "mq-small";
   }
@@ -8,13 +7,13 @@
 // Medium screens
   @media only screen
   and (min-width : 768px)
-  and (max-width: 1200px) {
-    
+  and (max-width: 1000px) {
+    @import "mq-medium";
   }
 
 // Medium/Large screens
   @media only screen
-  and (min-width : 1200)
+  and (min-width : 1000px)
   and (max-width: 1600px) {
     
   }
@@ -22,7 +21,7 @@
 // Large screens
   @media only screen
   and (min-width : 1600px) {
-    
+    @import "mq-large";
   }
 
 // Smartphones (portrait and landscape)

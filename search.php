@@ -27,7 +27,6 @@ get_header(); ?>
         $count++; //increment the variable by 1 each time the loop executes
         ?>
         
-          <div class="inner">
             <div class="post">
               <?php if ($wp_query->found_posts == 1) { ?>
               <h1>1 result for <?php echo get_search_query(); ?></h1>
@@ -45,7 +44,6 @@ get_header(); ?>
               <?php echo get_the_date('jS F Y'); ?><br />
               <?php the_author_posts_link(); ?> 
             </div>
-          </div>
 
         <?php
           //every 3 items close new row and start a new one
@@ -64,7 +62,6 @@ get_header(); ?>
     <?php else : ?>
       <article>
         <section>
-          <div class="inner">
             <div class="post">
               <?php if ($wp_query->found_posts == 1) { ?>
               <h1>1 result for <?php echo get_search_query(); ?></h1>
@@ -73,7 +70,6 @@ get_header(); ?>
               <?php } ?>
               <p>Sorry, but nothing matched your search criteria.</p>
             </div>
-          </div>
         </section>
         <?php get_sidebar(); ?>
       </article>
