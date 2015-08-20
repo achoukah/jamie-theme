@@ -4,7 +4,7 @@
 <aside>
   <div class="sidebar-item">
     <h1>ADS</h1>
-    <a href="#"><img src="http://lorempixel.com/300/250/"></a>
+    <a href="#"><img src="https://unsplash.it/300/250?random"></a>
   </div>
 
   <div class="sidebar-item">
