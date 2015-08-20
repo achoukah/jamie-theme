@@ -36,10 +36,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
-		"last_filter": "format",
+		"height": 110.0,
+		"last_filter": "install",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"format",
 				"Format CSS: Expanded"
@@ -50,10 +54,6 @@
 			],
 			[
 				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -129,7 +129,7 @@
 				"HTMLBeautify"
 			]
 		],
-		"width": 467.0
+		"width": 485.0
 	},
 	"console":
 	{
@@ -150,14 +150,7 @@
 	},
 	"file_history":
 	[
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/category.php",
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/scss/search.scss",
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/scss/global.scss",
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/scss/layout.scss",
 		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/scss/header.scss",
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/search.php",
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/author.php",
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/jamie-theme/header.php",
 		"/Users/achoukah/Documents/anwarchoukah.com/index.html",
 		"/Users/achoukah/Documents/anwarchoukah.com/error.html",
 		"/Users/achoukah/Documents/anwarchoukah.com/contact.html",
@@ -389,7 +382,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 38.0
 	},
 	"layout":
 	{
