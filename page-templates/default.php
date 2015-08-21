@@ -2,7 +2,6 @@
       
   <article>
     <section>
-      <div class="inner">
       <div class="post">
       <?php if (have_posts()) :
 
@@ -11,7 +10,6 @@
         <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
         <?php the_content(); ?>
 
-      </div>
 
         <?php endwhile; ?>
 

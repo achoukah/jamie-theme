@@ -42,8 +42,6 @@ if ( post_password_required() )
         <?php //If comments are open for this post
         if (comments_open()){ ?>
         <section class="comments_form">
-          <div class="inner">
           <?php comment_form(); ?>
-          </div>
         </section>
         <?php } //if comments are open ?>
