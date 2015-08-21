@@ -114,20 +114,21 @@
   }
   // Make the Magic Happen
   .nav-trigger + label, 
-  .main-menu {
+  .nav-trigger + .main-menu {
     transition: all 0.2s;
   }
 
-  .nav-trigger:checked + label, .nav-trigger:checked + .main-menu {
+  .nav-trigger:checked + label, 
+  .nav-trigger:checked + .main-menu {
     right: 20vw;
   }
   .nav-trigger ~ .main-menu {
-    position: relative;
-    left: 0;
+    // position: relative;
+    right: -20vw;
+    transition: all .2s ease-in-out;
   }
   .nav-trigger:checked ~ .main-menu {
     right: 20vw;
-    // border: thick solid rebeccapurple;
   }
   
 // ASIDE 
