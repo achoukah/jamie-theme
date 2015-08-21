@@ -3,54 +3,50 @@
 
 get_header(); ?>
 
-    <header>
-      <div class="inner">
-      <h1><?php echo single_tag_title(); ?></h1>
-      </div>
-    </header>
+    <article>
+      <section id="category-posts">
+        <h1><span>Tag:</span> <?php echo single_tag_title(); ?></h1>
 
-    <section id="category-posts">
-
-    <?php if ( have_posts() ) : ?>
+        <?php if ( have_posts() ) : ?>
 
 
-      <div class="inner"> 
 
-      <?$count = 0; //set up counter variable
-      ?>
-        
-        <?php while ( have_posts() ) : the_post(); 
 
-        $count++; //increment the variable by 1 each time the loop executes
+        <?$count = 0; //set up counter variable
         ?>
+          
+          <?php while ( have_posts() ) : the_post(); 
 
-        <div>
-          <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-          <?php
-            if ( has_post_thumbnail() ) {
-              the_post_thumbnail('standard_thumbnail');
-            }
+          $count++; //increment the variable by 1 each time the loop executes
           ?>
-          <?php the_title(); ?></a> <br />
 
-          <?php echo get_the_date('jS F Y'); ?><br />
-          <?php the_author_posts_link(); ?>
-        </div>
-
-      <?php
-        //every 3 items close new row and start a new one
-        if ($count % 3 == 0) { ?></div><div class="row"><?php } ?>  
-
-      <?php endwhile; ?>
-
-      </div>
-
-      <?php else : ?>
-          <div class="inner">
-          <p>Sorry, but you are looking for something that isn't here.</p>
+          <div class="post">
+            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
+            <?php
+              if ( has_post_thumbnail() ) {
+                the_post_thumbnail('standard_thumbnail');
+              }
+            ?>
+            <?php the_title(); ?></a>
+            <ul class="category-meta">
+              <li><?php echo get_the_date('jS F Y'); ?></li>
+              <li><?php the_author_posts_link(); ?></li>
+            </ul>
           </div>
-      <?php endif; ?>     
 
-    </section>
+        <?php
+          //every 3 items close new row and start a new one
+          if ($count % 3 == 0) { ?></div><div class="row"><?php } ?>  
+
+        <?php endwhile; ?>
+
+
+        <?php else : ?>
+            <p>Sorry, but you are looking for something that isn't here.</p>
+        <?php endif; ?>     
+
+      </section>
+      <?php get_sidebar(); ?>
+    </article>
 
 <?php get_footer(); ?>

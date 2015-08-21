@@ -13,7 +13,8 @@ form {
     margin-top: 1em;
     padding: 1em 0 .25em;
   }
-  input {
+  input,
+  textarea {
     padding: .5em;
     width: 100%;
     border: 0;
@@ -23,7 +24,9 @@ form {
     display: block;
     outline: none;
   }
-  input[type=text] {
+  input[type=text],
+  input[type=email],
+  textarea {
     width: 100%;
     background-color: $wh-tr-2;
 
@@ -92,6 +95,20 @@ form {
         }
       }
     }
+    input[type=submit] {
+      font-family: $bodytext;
+      font-size: 1em;
+      padding: 1em 3em;
+      background-color: $rd;
+      color: $wh-lt;
+      border: 0;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        background-color: darken($rd, 10);
+      }
+    }
   }
   .comment-form {
     label {
@@ -114,13 +131,7 @@ form {
         background-color: $wh-tr-7;
       }
     }
-  }
-  .form-allowed-tags {
-    font-size: .8em;
-    letter-spacing: 1px;
-  }
 
-  .form-submit {
     input[type=submit] {
       font-family: $bodytext;
       font-size: 1em;
@@ -135,4 +146,69 @@ form {
         background-color: darken($rd, 10);
       }
     }
+  }
+  .form-allowed-tags {
+    font-size: .8em;
+    letter-spacing: 1px;
+  }
+
+  .form-submit {
+    
+  }
+
+// CONTACT FORM 
+  .contactform {
+    p {
+      margin: 0;
+      padding: 0 1em 1em 1em;
+      line-height: 1.5;
+    }
+    br {
+      display: none;
+    }
+    label {
+      margin: 0;
+      padding: 0;
+    }
+    span.your-message {
+      float: none;
+    }
+    span {
+      float: none;
+    }
+    textarea,
+    input {
+      max-width: 100%;
+      min-width: 100%;
+      color: $lt;
+
+      &:focus {
+        color: $dk;
+      }
+    }
+    input[type=submit] {
+      font-family: $bodytext;
+      font-size: 1em;
+      padding: 1em 3em;
+      margin-top: 1em;
+      background-color: $rd;
+      color: $wh-lt;
+      border: 0;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        background-color: darken($rd, 10);
+      }
+    }
+
+    &.contactform-sidebar {
+
+    }
+  }
+  div.wpcf7-validation-errors,
+  .wpcf-3-validation-errors {
+    display: none !important;
+    visibility: hidden !important;
+    border: 0 !important;
   }
