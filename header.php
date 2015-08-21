@@ -38,7 +38,8 @@
       </form>
 
     </header>
-
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
     <nav class="main-menu" id="menu">
       <ul>
         <li <?php if(is_home()) { ?> class="current-cat"<?php } ?>>
@@ -47,6 +48,5 @@
       </ul>
     </nav>
     
-    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-    <label for="nav-trigger"></label>
+    
     

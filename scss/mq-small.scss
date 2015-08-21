@@ -39,6 +39,8 @@
       font-size: 1.5em;
       margin-top: 1.4em;
       margin-left: 5em;
+      width: auto;
+      display: inline-block;
 
       strong {
         // display: block;
@@ -64,15 +66,17 @@
   .main-menu {
     // width: 100%;
     // height: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 100vw;
+    right: 0;
     // bottom: 0;
     z-index: 0;
-    top: 200px;
-    left: 80vw;
-    bottom: 0;
-    z-index: -10;
+    // top: 200px;
+    // left: 80vw;
+    // bottom: 0;
+    // z-index: -10;
+    padding: 0;
+    text-align: right;
 
     ul {
       li {
@@ -98,6 +102,7 @@
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 24 24' enable-background='new 0 0 24 24' xml:space='preserve' fill='rgba(255,255,255,.8)'><rect width='24' height='3'/><rect y='16' width='24' height='3'/><rect y='8' width='24' height='3'/></svg>");
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: 150;
 
     &:before {
       content: 'Menu:';
@@ -108,19 +113,20 @@
     }
   }
   // Make the Magic Happen
-  .nav-trigger + label, article {
+  .nav-trigger + label, 
+  .main-menu {
     transition: all 0.2s;
   }
 
-  .nav-trigger:checked + label {
+  .nav-trigger:checked + label, .nav-trigger:checked + .main-menu {
     right: 20vw;
   }
-  .nav-trigger ~ article {
+  .nav-trigger ~ .main-menu {
     position: relative;
     left: 0;
   }
-  .nav-trigger:checked ~ article {
-    left: -20vw;
+  .nav-trigger:checked ~ .main-menu {
+    right: 20vw;
     // border: thick solid rebeccapurple;
   }
   
