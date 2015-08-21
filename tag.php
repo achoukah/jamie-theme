@@ -29,8 +29,8 @@ get_header(); ?>
             ?>
             <?php the_title(); ?></a>
             <ul class="category-meta">
-              <li><?php echo get_the_date('jS F Y'); ?></li>
-              <li><?php the_author_posts_link(); ?></li>
+              <li>Published: <?php echo get_the_date('jS F Y'); ?></li>
+              <li>By: <?php the_author_posts_link(); ?></li>
             </ul>
           </div>
 

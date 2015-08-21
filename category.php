@@ -23,8 +23,8 @@ get_header(); ?>
       <?php the_title(); ?></a>
 
       <ul class="category-meta">
-        <li class="date"><?php echo get_the_date('jS F Y'); ?></li>
-        <li class="author">Posted by: <?php the_author_posts_link(); ?></li>
+        <li class="date">Published: <?php echo get_the_date('jS F Y'); ?></li>
+        <li class="author">By: <?php the_author_posts_link(); ?></li>
       </ul>
     
       <?php

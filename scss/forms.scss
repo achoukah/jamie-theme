@@ -160,7 +160,7 @@ form {
   .contactform {
     p {
       margin: 0;
-      padding: 0 1em 1em 1em;
+      padding: 0 1rem .5rem;
       line-height: 1.5;
     }
     br {
@@ -181,6 +181,7 @@ form {
       max-width: 100%;
       min-width: 100%;
       color: $lt;
+      padding: .7rem;
 
       &:focus {
         color: $dk;
@@ -208,7 +209,13 @@ form {
   }
   div.wpcf7-validation-errors,
   .wpcf-3-validation-errors {
-    display: none !important;
-    visibility: hidden !important;
-    border: 0 !important;
+    // display: none;
+    // visibility: hidden;
+    border: 0;
+    margin: 0 1rem 1rem;
+    padding: 0 .3rem;
+    text-align: center;
+    font-size: 90%;
+    line-height: 1.5;
+    background: $rd-md;
   }
