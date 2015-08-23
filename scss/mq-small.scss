@@ -13,7 +13,7 @@
     width: 100%;
     flex-direction: column;
     margin: 0;
-    padding: 0 .5em;
+    padding: 0 1em;
     z-index: 2;
   }
   section {
@@ -57,7 +57,7 @@
       }
       &.search {
         top: .5em;
-        right: .5rem;
+        right: 1rem;
       }
     }
   }
@@ -130,6 +130,11 @@
   }
   .nav-trigger:checked ~ .main-menu {
     right: 20vw;
+  }
+  .nav-trigger,
+  label[for="nav-trigger"] {
+    visibility: visible;
+    display: inline;
   }
   
 // ASIDE 

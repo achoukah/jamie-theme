@@ -15,7 +15,7 @@
   body {
     background-color: $dk;
     color: $lt;
-    font-size: 100%;
+    font-size: 16px;
 
     display: flex;
     min-width: 100vw;
@@ -91,5 +91,5 @@
 // WP ADMINBAR
 
   #wpadminbar {
-    display: none;
+    // display: none;
   }
