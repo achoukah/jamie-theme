@@ -44,7 +44,8 @@
       <ul>
         <li <?php if(is_home()) { ?> class="current-cat"<?php } ?>>
         <a href="<?php bloginfo('home'); ?>">Home</a></li>
-        <?php wp_list_categories('title_li=&orderby=id'); ?>
+        <?php wp_list_categories('orderby=name&use_desc_for_title=1&title_li=&number=5'); ?>
+
       </ul>
     </nav>
     
