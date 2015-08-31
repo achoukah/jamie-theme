@@ -1,0 +1,484 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fs",
+				"font-size"
+			],
+			[
+				"p",
+				"pointer"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"bp",
+				"bgp	background-position"
+			],
+			[
+				"shar",
+				"sharingButton"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "forma",
+		"selected_items":
+		[
+			[
+				"forma",
+				"Format CSS: Expanded"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"beautif",
+				"HTMLBeautify"
+			],
+			[
+				"beaut",
+				"HTMLBeautify"
+			],
+			[
+				"beau",
+				"SassBeautify"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Convert Case: Title Case"
+			],
+			[
+				"LOWER",
+				"Convert Case: Lower Case"
+			],
+			[
+				"eme",
+				"Set Syntax: Emmet"
+			],
+			[
+				"css",
+				"Format CSS: Expanded"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"emme",
+				"Set Syntax: Emmet"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"install	",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"beauti",
+				"HTMLBeautify"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/htdocs/jamie-griffin-video-2/wp-content/themes/jamie-theme"
+	],
+	"file_history":
+	[
+		"/Users/anwarchoukah/Documents/Transmission/Other/dmps/CreditCardTransactions.7z.asc",
+		"/Users/anwarchoukah/Documents/Transmission/Other/dmps/member_details.dump",
+		"/Users/anwarchoukah/Documents/anwarchoukah.com/150621-anwarchoukah-com/anwarchoukah-com/.gitignore",
+		"/Users/achoukah/Documents/anwarchoukah.com/scss/_header.scss",
+		"/Users/achoukah/Documents/anwarchoukah.com/scss/_variables.scss",
+		"/Users/achoukah/Documents/anwarchoukah.com/scss/style.scss",
+		"/Users/achoukah/Documents/anwarchoukah.com/index.html",
+		"/Users/achoukah/Documents/anwarchoukah.com/scss/_gallery.scss",
+		"/Users/achoukah/Documents/anwarchoukah.com/contact.html",
+		"/Users/achoukah/Documents/anwarchoukah.com/.gitignore",
+		"/Users/achoukah/Documents/football-transfer-map/html/map-test-small.html",
+		"/Users/achoukah/Documents/football-transfer-map/html/scss/mq.scss",
+		"/Users/achoukah/Downloads/CSSOverlay/index.html",
+		"/Users/achoukah/Documents/football-transfer-map/html/popup.html",
+		"/Users/achoukah/Dropbox/notesy/Photoshop gradients css plugin.txt",
+		"/Users/achoukah/Documents/countdown general election 1x1/css/style.css",
+		"/Users/achoukah/Documents/gameface/nav/scss/reset.scss",
+		"/Users/achoukah/Documents/gameface/nav/scss/style.scss",
+		"/Users/achoukah/Documents/football-transfer-map/html/scss/style.scss",
+		"/Users/achoukah/Documents/football-transfer-map/html/africa.html",
+		"/Users/achoukah/Documents/football-transfer-map/html/map.html",
+		"/Users/achoukah/Documents/football-transfer-map/html/scss/reset.scss",
+		"/Users/achoukah/Documents/football-transfer-map/html/scss/reset",
+		"/Users/achoukah/Documents/CLUBZ/spotify-playlist/index.html",
+		"/Users/achoukah/Documents/football-transfer-map/assets/world-map.svg",
+		"/Users/achoukah/Documents/football-transfer-map/html/css/style.css",
+		"/Users/achoukah/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/achoukah/Documents/join/150323 Join/sol_Join/html/css/150528-style.css",
+		"/Users/achoukah/Documents/join/Sun Apps Form/sun_apps.css",
+		"/Users/achoukah/Dropbox/WERK/just_published-hide_most_read/style.scss",
+		"/Users/achoukah/Documents/join/150323 Join/sol_Join/html/less/150528-style.less",
+		"/Users/achoukah/Documents/join/150323 Join/sol_Join/html/index-england.html",
+		"/Users/achoukah/Documents/join/150323 Join/html/css/150528-style.css",
+		"/Users/achoukah/Documents/join/150323 Join/html/less/150528-style.less",
+		"/Users/achoukah/Documents/join/150323 Join/html/index-england.html",
+		"/Users/achoukah/Dropbox/WERK/Redesign 2014/Spritesheet/for Nick/150520-sol-sprite-illustrator-svg.svg",
+		"/Users/achoukah/Dropbox/WERK/Redesign 2014/Spritesheet/for Nick/150520-sol-sprite-illustrator-ai.svg",
+		"/Users/achoukah/Dropbox/WERK/Redesign 2014/Spritesheet/for Nick/150520-sol-sprite-sketch.svg",
+		"/Users/achoukah/Documents/join/150323 Join/html/eng-for-escenic.txt",
+		"/Users/achoukah/Documents/join/150323 Join/html/js/script.js",
+		"/Volumes/newsun_work/SOL-DEV/Scottish Sun/SunSpot/css/style.css",
+		"/Users/achoukah/Documents/join/150323 Join/html/index-scotland.html",
+		"/Users/achoukah/Documents/join/150323 Join/html/index-ireland.html",
+		"/Users/achoukah/Desktop/rob.txt",
+		"/private/var/folders/g8/bm2z1pws12z8fbgxtqnsvs71x1fhbw/T/TemporaryItems/(A Document Being Saved By Illustrator 6)/ai14319653121.tmp/ai14319653121.txt",
+		"/Users/achoukah/Dropbox/WERK/GiveMeShelter/sharing-buttons-twitter-facebook.html",
+		"/Users/achoukah/Documents/join/expand-target/css/test-target.less",
+		"/Users/achoukah/Documents/Sharing/twitter-facebook-1x1/twitter-facebook-1x1.html",
+		"/Users/achoukah/Documents/Sun-Nation/countdown/sunnation-countdown.html",
+		"/Users/achoukah/Documents/Sun-Nation/countdown/style.less",
+		"/Users/achoukah/Documents/join/150323 Join/html/less/150414-style.less",
+		"/Volumes/newsun_work/SOL-DEV/css/video-teasers.css",
+		"/Users/achoukah/Library/Application Support/Sublime Text 3/Packages/User/SublimePackageSync.sublime-settings",
+		"/Users/achoukah/Library/Application Support/Sublime Text 3/Packages/SublimePackageSync/SublimePackageSync.sublime-settings",
+		"/Users/achoukah/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/achoukah/Documents/join/150323 Join/html/css/150325-style-1857.css",
+		"/Users/achoukah/Documents/join/150323 Join/html/css/style.css",
+		"/Volumes/newsun_work/adaptive/england/1x1/football-indexes/css/style.css",
+		"/Volumes/newsun_work/adaptive/england/1x1/football-indexes/scss/style.scss",
+		"/Volumes/newsun_work/adaptive/england/1x1/football-indexes/index.html"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"/Users/achoukah/Documents/anwarchoukah.com"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"font-family",
+			"font-face",
+			"container",
+			"top",
+			"\"",
+			"85px",
+			"136px",
+			"620px",
+			"300px",
+			"bk",
+			"norway",
+			"\"",
+			" sketch:type=\"MSLayerGroup\"",
+			"sketch:type=\"MSShapeGroup\"",
+			"sketch:type=\"MSShapeGroup\"></",
+			"onmouseout=\"tooltip.hide();\"",
+			"\n                     onmouseover=\"tooltip.show('<h1>Israel</h1><h2>Cristiano Ronaldo</h2><p>Consectetuer adipiscing elit. Praesent lacinia, dui ut consequat bibendum, lorem dolor tristique tellus, at faucibus nibh est in orci. In pede.</p>');\" onmouseout=\"tooltip.hide();\"",
+			"onmouseout=\"tooltip.hide();\"",
+			"moro",
+			"sketch:type=\"MSShapeGroup\"",
+			"onmouseout=\"tooltip.hide();\"",
+			"onmouseover=\"tooltip.show('<h1>Syria</h1><h2>Coming soon</h2>');\" onmouseout=\"tooltip.hide();\"",
+			"255",
+			"nether",
+			"\n      ",
+			"onmouseout=\"tooltip.hide();\"",
+			"onmouseover=\"tooltip.show('<h1>Czech Republic</h1><h2>Coming soon</h2>');\" onmouseout=\"tooltip.hide();\"",
+			"onmouseover=\"tooltip.show('<h1>Cyprus</h1><h2>Coming soon</h2>');\" onmouseout=\"tooltip.hide();\"",
+			"\n      \n      onmouseover=\"tooltip.show('<h1>Iceland</h1><h2>Coming soon</h2>');\" onmouseout=\"tooltip.hide();\"",
+			"sketch:type=\"MSShapeGroup\"",
+			"30%",
+			"<path ",
+			"2rem",
+			":",
+			"          \n",
+			"Cristiano Ronaldo",
+			"<p'",
+			"<h2>Cristiano Ronaldo</h2><p>Consectetuer adipiscing elit. Praesent lacinia, dui ut consequat bibendum, lorem dolor tristique tellus, at faucibus nibh est in orci. In pede.</p>",
+			"Coming soon",
+			"italy",
+			"<p></p>",
+			"<h2>XXX</h2>",
+			"onmouseover=\"",
+			"netherlands",
+			"font",
+			";\n",
+			"href",
+			"160",
+			"onmouseover=\"tooltip.show('<h1>Syria</h1><h2>Cristiano Ronaldo</h2><p>Consectetuer adipiscing elit. Praesent lacinia, dui ut consequat bibendum, lorem dolor tristique tellus, at faucibus nibh est in orci. In pede.</p>');\" onmouseout=\"tooltip.hide();\"></path>",
+			"></path>",
+			"</path>",
+			">\n",
+			"islands",
+			"_1_",
+			"<path ",
+			"china",
+			"alaska",
+			"margin: 0;",
+			"usa",
+			"china",
+			"mctooltip",
+			"transfer map",
+			"\"/>",
+			"/>",
+			"<path",
+			"_",
+			"_3_",
+			"_2_",
+			"6000",
+			"6000px",
+			" <em>free</em>",
+			"latest",
+			"no contra",
+			"begin your",
+			"after your ",
+			"scot",
+			"text-align",
+			"arial, helvetica, sans-serif",
+			" style='width:768px;height:432px; margin-bottom: 20px;'",
+			"id='ooyalaplaye",
+			"ooyalaplayer",
+			"432px",
+			"1020",
+			"button",
+			":visited",
+			"join-container{",
+			"join-c",
+			"membership",
+			" igital",
+			"days out",
+			"See <em>free</em> trial details",
+			"trial details",
+			"https://join.thesun.co.uk/?pc=free",
+			"trial",
+			"after",
+			"sunapp",
+			"contact\"",
+			"min-width: 620px",
+			"(min-width: 620px)",
+			"80%",
+			"90%",
+			"1451px",
+			"â€™",
+			"â€˜",
+			" ",
+			"background-posi",
+			"pin",
+			"display: none",
+			"48px",
+			"in-",
+			".2s",
+			");\n",
+			".sharingicon {\n\n                  &:hover {\n                    background-position: -159px -2960px;\n                  }\n                }",
+			"sharingIcon",
+			".",
+			"10px",
+			"92px",
+			"50px",
+			"80px",
+			"50px",
+			"background: $",
+			"help@",
+			"// *************************************************************************",
+			"80%",
+			"90%",
+			"fade",
+			"@",
+			"\"button\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\n       onmouseover=\"tooltip.show('<h1>Syria</h1><h2>Cristiano Ronaldo</h2><p>Consectetuer adipiscing elit. Praesent lacinia, dui ut consequat bibendum, lorem dolor tristique tellus, at faucibus nibh est in orci. In pede.</p>');\" onmouseout=\"tooltip.hide();\"></path>",
+			"<path class=\"country\" ",
+			"<path class=\"country\"",
+			"'Open Sans'",
+			"https://join.thesun.co.uk/?pc=1FOR2JUN15",
+			"/* ************************************************************************ */"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "griffmonkey.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

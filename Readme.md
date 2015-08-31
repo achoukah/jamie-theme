@@ -1,7 +1,8 @@
-# Jamie Griffin's WordPress theme
+# GriffMonkey WordPress theme
 
-##Features
+## Features
+
 * HTML5
 * CSS3
-* Created using Gulp.js
+* WordPress (Duh!)
 
