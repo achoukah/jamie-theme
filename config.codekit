@@ -723,7 +723,7 @@
 		"useLibsass": 0
 		},
 	"\/scss\/layout.scss": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
