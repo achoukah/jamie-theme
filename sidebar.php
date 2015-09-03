@@ -3,8 +3,22 @@
 ?>
 <aside>
   <div class="sidebar-item">
-    <h1>ADS</h1>
+    <h1>ADVERISEMENT</h1>
     <a href="#"><img src="https://unsplash.it/300/250?random"></a>
+  </div>
+
+  <div class="sidebar-item">
+    <h1>AD</h1>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Anwar Choukah -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9953535432921396"
+         data-ad-slot="1548396465"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </div>
 
   <div class="sidebar-item">
@@ -14,7 +28,7 @@
   <div class="sidebar-item">
     <h1>Contact us</h1>
     <div class="contactform contactform-sidebar">
-      <?php echo do_shortcode( '[contact-form-7 id="29" title="Contact form"]' ); ?>
+      <?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
     </div>
   </div>
 </aside>
